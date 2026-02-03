@@ -13,26 +13,31 @@ const checkAnswer = () => {
   if(!outputBox.textContent.includes("Manhattan")){if(textBox.value.includes("Manhattan")){
     score += 1;
     outputBox.textContent = outputBox.textContent + score + ": " + textBox.value + ", ";
+    statusBox.innerHTML = "<h3>Manhattan</h3><p>Commuter Central! Only 22% of its residents own a car!</p>";
   }}
 
   if(!outputBox.textContent.includes("Brooklyn")){if(textBox.value.includes("Brooklyn")){
     score += 1;
     outputBox.textContent = outputBox.textContent + score + ": " + textBox.value + ", ";
+    statusBox.innerHTML = "<h3>Brooklyn</h3><p>The most populous Borough, with nearly 3 million residents!</p>";
   }}
 
   if(!outputBox.textContent.includes("Bronx")){if(textBox.value.includes("Bronx")){
     score += 1;
     outputBox.textContent = outputBox.textContent + score + ": " + textBox.value + ", ";
+    statusBox.innerHTML = "<h3>The Bronx</h3><p>Home of the Yankees and the birthplace of salsa dancing.</p>";
   }}
 
   if(!outputBox.textContent.includes("Queens")){if(textBox.value.includes("Queens")){
     score += 1;
     outputBox.textContent = outputBox.textContent + score + ": " + textBox.value + ", ";
+    statusBox.innerHTML = "<h3>Queens</h3><p>The largest Borough, at 109 square miles.</p>";
   }}
 
   if(!outputBox.textContent.includes("Staten Island")){if(textBox.value.includes("Staten Island")){
     score += 1;
     outputBox.textContent = outputBox.textContent + score + ": " + textBox.value + ", ";
+    statusBox.innerHTML = "<h3>Staten Island</h3><p>The roomiest Borough, with the fewest people per square mile.</p>";
   }}
 
   // Retrieve inputted value
